@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Combining css selectors */
@@ -23,6 +26,8 @@ h1, h2 {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding-bottom: 10px;
+    width: 80%; /* Center-align sections */
+    max-width: 800px; /* Optional: limit the maximum width */
 }
 
 /* Center and style the navbar with a line above and below */
@@ -64,6 +69,29 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Align list items */
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.list li {
+    padding: 5px 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Grid for skills section */
+.skills .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns */
+    gap: 10px;
+    width: 80%; /* Adjusted width to match experience section */
 }
 
 /* Grid for layout */
