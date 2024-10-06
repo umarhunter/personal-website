@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Combining css selectors */
+h1, h2 {
+    text-align: center;
+}
+
+/* Center the profile picture and add padding */
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px; /* Added padding */
+}
+
+.section {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Center and style the navbar with a line above and below */
+.nav-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid #ccc; /* Added border-top */
+    padding-top: 10px; /* Added padding-top for spacing */
+}
+
+.nav-section a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-section a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media query for responsive navbar */
+@media (max-width: 600px) {
+    .nav-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-section a {
+        margin: 5px 0;
+    }
+}
+
+/* Flexbox for layout */
+.skills, .experience, .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid for layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
